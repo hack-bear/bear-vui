@@ -1,0 +1,33 @@
+{
+  "name": "hb-vui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "author": "hack-bear",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "vue": "^1.0.26",
+    "vue-router": "^0.7.13"
+  },
+  "devDependencies": {
+    "bundle-loader": "^0.5.4",
+    "css-loader": "^0.25.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "html-loader": "^0.4.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "url-loader": "^0.5.7",
+    "vue-html-loader": "^1.2.3",
+    "webpack": "^1.13.1",
+    "webpack-clean-plugin": "^0.2.3",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
