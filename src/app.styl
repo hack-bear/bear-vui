@@ -1,0 +1,42 @@
+@import "./vars"
+
+*, *:before, *:after
+  margin 0
+  padding 0
+  box-sizing border-box
+  -webkit-tap-highlight-color transparent
+  -webkit-touch-callout none
+html
+  font-size 20px
+
+#hb-app
+  font-size $fs3
+  line-height 1.2
+  a
+    text-decoration none
+  button
+    outline none
+  input, textarea
+    outline none
+    border none
+    font-size $fs3
+    line-height 1.2
+    resize none
+    width 100%
+
+@-webkit-keyframes rotate{
+  0%{
+    -webkit-transform:rotate(0deg);
+   }
+   100%{
+     -webkit-transform:rotate(360deg);
+   }
+}
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+   }
+   100%{
+     transform:rotate(360deg);
+   }
+}

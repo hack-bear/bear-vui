@@ -22,7 +22,7 @@ module.exports = function (target) {
       publicPath: "/dist/",
       path: __dirname + "/dist",
       filename: "[name].js",
-      chunkFilename: "[name].[hash].js"
+      chunkFilename: "[name].js"
     },
     module: {
       loaders: [

@@ -1,0 +1,30 @@
+@import "../../vars"
+
+.hb-cell__wrapper
+  .hb-cell__title
+    padding 5px $space
+    font-size $fs4
+    background #ccc
+  .hb-cell__list
+    border-top solid 1px $c-border
+    border-bottom solid 1px $c-border
+    padding-left $space
+  .hb-cell__list-item
+    padding $space
+    padding-left 0
+    border-bottom solid 1px $c-border
+    display flex
+    align-items center
+    &:last-child
+      border-bottom none
+    .hb-cell__list-item-title
+      flex 1
+      .vice-title
+        font-size $fs4
+        padding-top $space
+    .hb-cell__list-item-desc
+      flex 0 0 auto
+      &.svg-icon
+        padding-left $space
+        svg
+          display block
