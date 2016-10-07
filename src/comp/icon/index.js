@@ -8,6 +8,16 @@ var ICONS = [
 
 ICONS.forEach(function (filename) {
   Vue.component('icon-'+filename, {
-    template: '<i class="svg-icon icon-'+filename+'">'+require('raw!./svg/'+filename+'.svg')+'</i>'
+    props: {
+      width: {
+        type: Number,
+        default: 16
+      },
+      height: {
+        type: Number,
+        default: 16
+      }
+    },
+    template: '<i class="svg-icon icon-'+filename+'">'+require('raw!./svg/'+filename+'.svg').replace('<svg', '<svg :width="width" :height=height')+'</i>'
   });
 });

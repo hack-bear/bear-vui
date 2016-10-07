@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "svgo": "./node_modules/.bin/svgo -f ./src/comp/icon/origin/ -o ./src/comp/icon/svg/ --enable=removeDimensions"
   },
   "author": "hack-bear",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
+    "svgo": "^0.7.1",
     "url-loader": "^0.5.7",
     "vue": "^1.0.26",
     "vue-html-loader": "^1.2.3",
