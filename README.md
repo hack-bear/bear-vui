@@ -21,4 +21,4 @@ TODO
 
 ### TODO
 
-Move to Vue 2
+Move to Vue 2, Vue router 2 (transition)

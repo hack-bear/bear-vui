@@ -9,13 +9,15 @@ body.popup-open
   display flex
   flex-direction column
   height 100vh
+  background #fff
+  position absolute
   .hb-page__header
-    background grey
+    background $bg1
     flex 0 0 auto
     position relative
     z-index 2
   .hb-page__footer
-    background grey
+    background $bg1
     flex 0 0 auto
     position relative
     z-index 2
@@ -23,3 +25,13 @@ body.popup-open
     flex 1 1 auto
     overflow-y auto
     -webkit-overflow-scrolling touch
+
+.page-transition
+  transition all .3s ease
+  left 0
+  opacity 1
+.page-enter
+  left 60vw
+  z-index 2
+.page-leave
+  opacity 0.99

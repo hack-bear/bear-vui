@@ -9,11 +9,15 @@
     </div>
   </div>
   <div class="hb-page__content">
-    <div class="hb-cell__wrapper"> 
+    <div class="hb-cell__wrapper">
       <div class="hb-cell__title">Basic Css</div>
       <div class="hb-cell__list">
-        <a class="hb-cell__list-item">
+        <a class="hb-cell__list-item" v-link="{ name: 'layout' }">
           <div class="hb-cell__list-item-title">Layout</div>
+          <icon-right class="hb-cell__list-item-desc"></icon-right>
+        </a>
+        <a class="hb-cell__list-item">
+          <div class="hb-cell__list-item-title" v-link="{ name: 'tabbar' }">Tabbar</div>
           <icon-right class="hb-cell__list-item-desc"></icon-right>
         </a>
         <a class="hb-cell__list-item">

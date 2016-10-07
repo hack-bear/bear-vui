@@ -13,6 +13,7 @@ Vue.use(VueRouter);
 require('./comp/icon');
 require('./comp/page/style.styl');
 require('./comp/header/style.styl');
+require('./comp/tabbar/style.styl');
 require('./comp/cell/style.styl');
 
 var App = Vue.extend({
@@ -34,6 +35,14 @@ router
     '/index': {
       name: 'index',
       component: loadView('index')
+    },
+    '/layout': {
+      name: 'layout',
+      component: loadView('layout')
+    },
+    '/tabbar': {
+      name: 'tabbar',
+      component: loadView('tabbar')
     }
   })
   .redirect({
